@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="blocks/link :: link"></head>
+
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container">
+    <form action="/form" method="post">
+        <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" name="user" class="form-control" id="exampleInputName2" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" name="userMail" class="form-control" id="exampleInputEmail2" placeholder="имя@example.com">
+        </div>
+        <button type="submit" class="btn btn-primary">Send invitation</button>
+    </form>
+</div>
+
+<footer th:insert="blocks/footer :: footer"></footer>
+
+</body>
+</html>

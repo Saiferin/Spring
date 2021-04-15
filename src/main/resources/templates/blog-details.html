@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="blocks/link :: link"></head>
+
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container mt-5">
+     <div th:each="el:${post}" class="alert alert-info mt-2">
+        <h1 th:text="${el.title}"></h1>
+        <p th:text="${el.fullText}"></p>
+        <p><b>Просмотры:</b><span th:text="${el.views}"></span></p>
+        <a th:href="'/blog/' + ${el.id} + '/edit'" class="btn btn-warning">Редактировать</a>
+         <form th:action="'/blog/' + ${el.id}+ '/remove'" method="post">
+             <button class="btn btn-warning" type="submit">Удалить</button>
+         </form>
+
+    </div>
+</div>
+<footer th:insert="blocks/footer :: footer"></footer>
+</body>
+</html>

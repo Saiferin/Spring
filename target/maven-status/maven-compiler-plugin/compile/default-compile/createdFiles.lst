@@ -1,0 +1,8 @@
+com\testnews\blog\repo\FormRepository.class
+com\testnews\blog\controllers\BlogController.class
+com\testnews\blog\controllers\MainController.class
+com\testnews\blog\models\Post.class
+com\testnews\blog\controllers\FormController.class
+com\testnews\blog\repo\PostRepository.class
+com\testnews\blog\models\Form.class
+com\testnews\blog\BlogApplication.class
